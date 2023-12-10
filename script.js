@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // retrive the data from localstorage if present or assign the empty array
   const dataFromlocalStorage = JSON.parse(localStorage.getItem("todos")) || [];
-
+  updateDisplay()
   // retrive items which are store inside the localstorage when DOM Content Loaded.
 
 
@@ -141,4 +141,3 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
 })
-updateDisplay()
