@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <title>TO-DO-APP</title>
+</head>
+
+<body>
+  <div class="container">
+    <h2 id="taskAdd">Task is Added Successfully..</h2>
+    <h2 id="taskRemove">Task is Remove Successfully</h2>
+    <h2 id="taskComplete">Task is completed</h2>
+    <h1>TODO-LIST</h1>
+    <div class="content">
+      <div class="inputFeild">
+        <input type="text" id="task" placeholder="Enter your task here..." autofocus />
+        <button class="btn" onclick="addTask()">Add Task</button>
+      </div>
+    </div>
+    <div class="showCaseContainer">
+      <div class="incompletedtask">
+        <h3>Incomplete Task</h3>
+        <ol id="IncompletetaskList"></ol>
+      </div>
+      <div class="completedtask">
+        <h3>complete Task</h3>
+        <ol id="cTask"></ol>
+      </div>
+    </div>
+  </div>
+  <script src="node.js"></script>
+</body>
+
+</html>
